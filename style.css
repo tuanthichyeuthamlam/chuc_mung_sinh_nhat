@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 77, 110);
+}
+
+.card{
+    background: 
+        linear-gradient(rgb(104, 148, 206), rgb(22, 116, 240)) padding-box,
+        conic-gradient(
+            from -68deg,
+            red 0deg,
+            aqua 68deg,
+            red 136deg,
+            aqua 158deg,
+            red 180deg,
+            aqua 248deg,
+            red 316deg,
+            aqua 338deg,
+            red 360deg)
+            border-box;
+    padding: 40px;
+    border-radius: 20px;
+    border-width: 20px;
+    border-color: transparent;
+    border-style: solid;
+    box-sizing: border-box; 
+    text-align: center;
+    height: 90vh;
+    width: 90vw;
+
+}
+
+h1{
+    color: antiquewhite;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    /* text-shadow: lệch ngang lệch dọc độ nhòe màu bóng */
+    text-shadow: 
+        0px 2px 10px rgb(29, 29, 27),
+/* tạo hiệu ứng neon */
+        0px 0px 20px rgb(209, 230, 14);
+}
+
+.message{
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 10px black;
+}
+
+#no_hu{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: white;
+
+    background: linear-gradient(rgb(156, 65, 65), rgb(0, 0, 0));
+
+    padding: 35px 60px;
+    margin-top: 60px;
+    border: 5px solid rgb(96, 37, 37);
+    border-radius: 10px;
+    cursor: pointer;
+
+    box-shadow : 0px 2px 20px black;
+
+    transition: all 0.2 ease;
+}
+
+#no_hu:hover{
+    transform-origin: bottom;
+    transform: scale(1.05); /* Nút nảy nhẹ lên trên và phóng to 5% */
+    box-shadow: 0px 0px 25px rgba(255, 75, 43, 0.8); /* Bóng sáng rực lên */
+}
+ 
+#no_hu:active{
+    transform-origin: top;
+    transform: scale(0.98);  /* Nút lún xuống tạo cảm giác bấm thật */
+}
